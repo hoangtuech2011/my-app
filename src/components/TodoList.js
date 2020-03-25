@@ -9,7 +9,7 @@ const TodoList = ({ todos, toggleTodo }) => (
       confirmonsole.log('todo list 1');
       confirmonsole.log('todo list 2');
       confirmonsole.log('todo list 3');
-
+      confirmonsole.log('cherry pick to master');
 
     todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
