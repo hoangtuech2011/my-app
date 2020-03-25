@@ -5,7 +5,7 @@ import Todo from "./Todo";
 const TodoList = ({ todos, toggleTodo }) => (
   <ul>
     {
-      confirmonsole.log('feature/todo');
+      confirmonsole.log('release v.0.0.1');
     todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
     ))}
