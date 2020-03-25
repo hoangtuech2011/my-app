@@ -6,9 +6,7 @@ const TodoList = ({ todos, toggleTodo }) => (
   <ul>
     {
       confirmonsole.log('release v.0.0.2');
-      confirmonsole.log('todo 1');
-      confirmonsole.log('todo 2');
-      confirmonsole.log('todo 3');
+      confirmonsole.log('todo 11');
     todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
     ))}
