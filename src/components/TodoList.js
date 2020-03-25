@@ -1,15 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Todo from './Todo'
-import CustomTodo from './CustomTodo'
+import React from "react";
+import PropTypes from "prop-types";
+import Todo from "./Todo";
 
 const TodoList = ({ todos, toggleTodo }) => (
   <ul>
-    {todos.map(todo => (
+    {
+      confirmonsole.log('feature/todo');
+    todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
     ))}
   </ul>
-)
+);
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
@@ -19,26 +20,5 @@ TodoList.propTypes = {
     }).isRequired
   ).isRequired,
   toggleTodo: PropTypes.func.isRequired
-}
-export default TodoList
-
-// const TodoList = ({ customTodos, toggleTodo }) => (
-//   <ul>
-//     {customTodos.map(todo => (
-//       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
-//     ))}
-//   </ul>
-// )
-// TodoList.propTypes = {
-//   customTodos: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.number.isRequired,
-//       completed: PropTypes.bool.isRequired,
-//       text: PropTypes.string.isRequired
-//     }).isRequired
-//   ).isRequired,
-//   toggleTodo: PropTypes.func.isRequired
-// }
-// export default TodoList
-
-
+};
+export default TodoList;
